@@ -1,0 +1,19 @@
+#wrapper {
+    width: 100%;
+}
+
+#colchecklist {
+    width: 40%;
+    height: 50%;
+    float: left;
+}
+#colbutton {
+    align-content: center;
+    width: 20%;
+    float: left;
+}
+
+#colcounter {
+    width: 40%;
+    float: left;
+}

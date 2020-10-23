@@ -1,0 +1,20 @@
+<script>
+    function zoekf(){
+        console.log("of ie het doet");
+        var woord = document.getElementById("vinde").value;
+        for( var i = 0;  i < woord.length  ;  i++ ){
+            if( "e" == woord[i] ){
+                console.log("er zit een e in");
+
+            }
+        }
+    }
+
+</script>
+
+
+
+
+<input type=text id="vinde">
+<input type=button value=Zoek onclick="zoekf()">
+<div id=uitkomst ></div>

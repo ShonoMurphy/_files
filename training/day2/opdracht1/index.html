@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>    
+        function buttonPress() {
+            var input = document.getElementById("text1").value;
+            if (input=="Hallo") {
+                alert ("Welkom");
+            } else if (input=="Doei") {
+                alert ("Tot ziens");
+                }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="text1">
+    <input type="submit" onclick="buttonPress()" value="Go" >
+</body>
+</html>

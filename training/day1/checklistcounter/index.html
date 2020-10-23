@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Counter</title>
+    <link rel="stylesheet" href="./styles.css">       
+      
+</head>
+<body>
+<div id="wrapper">
+    <div id="colchecklist">
+        <input type="checkbox" id="ch1" name="check1" class="checkboxes" value="yes1" >
+        <label for="monday">Monday</label><br>
+        <input type="checkbox" id="ch2" name="check2" class="checkboxes" >
+        <label for="tuesday">Tuesday</label><br>
+        <input type="checkbox" id="ch3" name="check3" class="checkboxes" >
+        <label for="wednesday">Wednesday</label><br>
+        <input type="checkbox" id="ch4" name="check4" class="checkboxes" >
+        <label for="thursday">Thursday</label><br>
+        <input type="checkbox" id="ch5" name="check5" class="checkboxes" >
+        <label for="friday">Friday</label><br>
+        <input type="checkbox" id="ch6" name="check6" class="checkboxes" >
+        <label for="saturday">Saturday</label><br>
+        <input type="checkbox" id="ch7" name="check7" class="checkboxes" >
+        <label for="sunday">Sunday</label><br>
+    </div>
+    <div id=colbutton>   
+        <input type="button" value="Add" onclick="addCounter()">
+        <input type="button" value="Reset" onclick="resetCounter()">
+    </div>
+    <div id="colcounter">   
+        <h1 id="count">        
+        </h1> 
+    </div>
+</div>
+<script type="text/javascript">
+    var counter = 0;
+    document.getElementById("count").innerHTML = counter
+    function addCounter() {
+        var c1 = document.getElementsByClassName("ch1").checked;
+        var c2 = document.getElementsByClassName("ch2").checked;
+        var c3 = document.getElementsByClassName("ch3").checked;
+        var c4 = document.getElementsByClassName("ch4").checked;
+        var c5 = document.getElementsByClassName("ch5").checked;
+        var c6 = document.getElementsByClassName("ch6").checked;
+        var c7 = document.getElementsByClassName("ch7").checked;
+        console.log(c1);
+        console.log(c2);
+        console.log(c3);
+        console.log(c4);
+        console.log(c5);
+        console.log(c6);
+        console.log(c7);
+        counter++;
+        console.log(counter);
+        document.getElementById("count").innerHTML = counter
+    }
+    function resetCounter() {
+        counter = 0;
+        document.getElementById("count").innerHTML = counter      
+    }
+</script>
+</body>
+</html>
