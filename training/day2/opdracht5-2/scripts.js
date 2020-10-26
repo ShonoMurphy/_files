@@ -10,6 +10,8 @@ function buttonPress(letter){
     var matchterm = new RegExp(combine, 'g');
     var include = logdata.includes(combine);
     var count = logdata.match(matchterm);
+    eval(letter.toLowerCase() + 'count++;');
+    eval(console.log())
     if (include == true) {
         appenddata.insertAdjacentHTML('afterend', '<p>Je hebt op knop ' + letter + ' gedrukt</p>');
         alert('Je hebt al ' + count.length + ' keer op knop ' + letter + ' gedrukt!');
@@ -17,3 +19,5 @@ function buttonPress(letter){
         appenddata.insertAdjacentHTML('afterend', '<p>Je hebt op knop ' + letter + ' gedrukt</p>');
     }
 }
+
+eval(letter.toLowerCase() + 'count++;');
